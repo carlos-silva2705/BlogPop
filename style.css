@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #C5C5C5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: #FFFF;
+  height: 5vh;
+  padding: 10px 10px;
+}
+
+.header a {
+  display: flex;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #CDCDCD;
+  color: black;
+}
+
+.header-right {
+  display: flex;
+  justify-self: center;
+  justify-content: spa;
+  float: right;
+}
+
+.login-button {
+  align-items: center;
+  margin-left: 20px;
+  height: 5vh;
+}
+
+.login-button a {
+  padding: 5px 10px 5px 10px;
+}
+
+.login{
+  border: 1px, solid, black;
+}
+
+.register {
+  margin-left: 5px;
+  background-color: #0000;
+  color: white;
+}
