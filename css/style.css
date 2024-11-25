@@ -5,7 +5,12 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #C5C5C5;
+  background-color: #2C2C2E;
+  overflow-x: hidden;
+}
+
+a, p, h1 {
+  color: #FFFF;
 }
 
 .header {
@@ -36,8 +41,7 @@ body {
 }
 
 .header-buttons a:hover {
-  background-color: #CDCDCD;
-  color: black;
+  color: #756E6E;
 }
 
 .header-buttons {

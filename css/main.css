@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main::before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(/imgs/back2.jpg);
+  background-size: cover;
+  filter: brightness(20%);
+}
+
+.main-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.main-text h1 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-text p {
+  font-size: 0.8rem;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.main .line {
+  width: 260px; /* Comprimento da linha */
+  height: 1px; /* Espessura da linha */
+  background-color: white;
+  margin: 0 auto 0.5rem auto; /* Centraliza e adiciona espaçamento inferior */
+}
