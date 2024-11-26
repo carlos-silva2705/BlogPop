@@ -1,19 +1,10 @@
-const carouselItems = document.querySelectorAll(".carousel-item");
-let i = 1;
+let currentIndex = 0;
 
-setInterval(() => {
-  // Acessando todos os items do carrossel
-  Array.from(carouselItems).forEach((item, index) => {
+function changeImage(direction) {
+  const items = document.querySelectorAll('.carousel-item');
+  items[currentIndex].classList.remove('active');
 
-    if(i < carouselItems.length){
-      item.style.transform = 'translateX(-${i*100}%)'
-    }
-  })
+  currentIndex = (currentIndex + direction + items.length) % items.length;
 
-  if(i < carouselItems.length){
-    i++;
-  }
-  else{
-    i=0
-  }
-},2000)
+  items[currentIndex].classList.add('active');
+}

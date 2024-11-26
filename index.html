@@ -26,7 +26,7 @@
         
       </div>
     </header>  
-    <main>
+    <div>
       <div class="main">
         <div class="main-text">
           <h1>PopTopia</h1>
@@ -34,6 +34,42 @@
           <p>Descubra o melhor da cultura pop em filmes, séries, games e música. Bem-vindo ao Poptopia!</p>
         </div>
       </div>
+
+      <div class="main-container">
+        <div class="main-title">
+          <h2>Books Recommended</h2>
+        </div>
+
+        <div class="carousel-container">
+          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+
+          <div class="carousel">
+            <div class="carousel-item active">
+            <a href="#"><img src="imgs/oiluminado.jpg" alt=""></a>
+            <h2>O Iluminado</h2>
+            <p>Stephen King</p>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="imgs/drsono.jpg" alt=""></a>
+            <h2>Doutor Sono</h2>
+            <p>Stephen King</p>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
+            <h2>Obsert, o Vingador</h2>
+            <p>Christopher William Hill</p>
+          </div>
+            <div class="carousel-item">
+              <a href="#"><img src="imgs/adivinacomedia.jpg" alt=""></a>
+              <h2>A Divina Comédia</h2>
+              <p>Dante Alighieri</p>
+            </div>
+          </div>
+
+          <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
     </main>
     <footer></footer>
   </body>

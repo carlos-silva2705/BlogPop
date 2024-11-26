@@ -1,7 +1,8 @@
 .main{
-  display: flex;
+  margin: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -45,4 +46,104 @@
   height: 1px; /* Espessura da linha */
   background-color: white;
   margin: 0 auto 0.5rem auto; /* Centraliza e adiciona espaçamento inferior */
+}
+
+.main-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A191C;
+  border-radius: 5px;
+}
+
+.main-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: none;
+  z-index: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item.active {
+  display: flex;
+  opacity: 1;
+  z-index: 10;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 450px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.carousel-item h2 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
