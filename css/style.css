@@ -16,21 +16,22 @@ a, p, h1, h2 {
 .header {
   display: flex;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   background-color: #1A191C;
-  height: 5vh;
   padding: 10px 10px;
 }
 
 .header a {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   float: left;
   color: #EFD4D4;
   text-align: center;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 15px 5px 15px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -48,30 +49,37 @@ a, p, h1, h2 {
   display: flex;
   margin-left: 50px;
   justify-self: center;
-  justify-content: space-between;
   float: right;
 }
 
-.social-media {
-  margin-right: 50px;
+footer {
+  background-color: #1A191C;
+  padding: 20px 0;
+  border-top: 2px solid #e0e0e0;
 }
 
-.social-media a {
-  background-color: #2C2C2E;
-  padding: 3px;
-  border-radius: 50%;
-  display: flex;
-  margin-right: 8px;
+.footer-container {
+  text-align: center;
+  margin: 0 auto;
+  height: 5vh;
+  max-width: 800px;
 }
 
-.social-media img{
-  padding: 5px;
-  width: 20px;
-  height: 20px;
+.social-icons {
+  font-size: 20px;
+  margin-bottom: 10px;
+  gap: 15px;
+  color: #525151;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.social-media a:hover {
-  background-color: #232224;
+.social-icons i:hover {
+  color: #007bff;
 }
 
-
+footer p {
+  font-size: 14px;
+  color: #525151;
+  margin: 0;
+}

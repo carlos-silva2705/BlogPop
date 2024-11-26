@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Document</title>
   </head>
 
@@ -16,61 +17,39 @@
           <a href="#books">Books</a>
           <a href="#movies">Movies</a>
           <a href="#series">Series</a>
-         </div>
-         <div class="social-media">
-            <a href="#twitter"><img src="imgs/twitter.png" alt=""></a>
-            <a href="#instagram"><img src="imgs/instagram.png" alt=""></a>
-            <a href="#linkedin"><img src="imgs/linkedin.png" alt=""></a>
-            <a href="#facebook"><img src="imgs/facebook.png" alt=""></a>
-          </div>
-        
+        </div>
       </div>
-    </header>  
+    </header>
+  <main>    
     <div>
       <div class="main">
         <div class="main-text">
           <h1>PopTopia</h1>
-          <div class="line"></div>
-          <p>Descubra o melhor da cultura pop em filmes, séries, games e música. Bem-vindo ao Poptopia!</p>
+          <p>Discover the best of culture on movies, books and series. Welcome to PopTopia!</p>
+
+            <a href="#content" class="button1">
+              <div class="box-1">
+                <div class="btn btn-one">
+                  <span>Clique Aqui e Conheça!</span>
+                </div>
+              </div>
+            </a>
         </div>
-      </div>
-
-      <div class="main-container">
-        <div class="main-title">
-          <h2>Books Recommended</h2>
-        </div>
-
-        <div class="carousel-container">
-          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-
-          <div class="carousel">
-            <div class="carousel-item active">
-            <a href="#"><img src="imgs/oiluminado.jpg" alt=""></a>
-            <h2>O Iluminado</h2>
-            <p>Stephen King</p>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img src="imgs/drsono.jpg" alt=""></a>
-            <h2>Doutor Sono</h2>
-            <p>Stephen King</p>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
-            <h2>Obsert, o Vingador</h2>
-            <p>Christopher William Hill</p>
-          </div>
-            <div class="carousel-item">
-              <a href="#"><img src="imgs/adivinacomedia.jpg" alt=""></a>
-              <h2>A Divina Comédia</h2>
-              <p>Dante Alighieri</p>
-            </div>
-          </div>
-
-          <button class="next" onclick="changeImage(1)">&#10095;</button>
-        </div>
-      </div>
+      
       <script src="script.js"></script>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-github"></i>
+        </div>
+        <p>&copy; 2024 Copyright: Carlos Eduardo - ETEC Carapicuiba</p>
+      </div>
+    </footer>
   </body>
 </html>
