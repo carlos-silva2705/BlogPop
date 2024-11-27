@@ -4,52 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/feixe-de-sorriso.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>PopTopia</title>
   </head>
 
   <body>
     <header>
       <div class="header">
-        <div class="header-buttons">
+        <div class="header-buttons hidden">
           <a class="active" href="#home">Home</a>
           <a href="#books">Books</a>
           <a href="#movies">Movies</a>
           <a href="#series">Series</a>
         </div>
+
+        <div class="footer-container">
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-github"></i>
+        </div>
       </div>
     </header>
   <main>    
-    <div>
       <div class="main">
         <div class="main-text">
-          <h1>PopTopia</h1>
+          <h2>PopTopia</h2>
           <p>Discover the best of culture on movies, books and series. Welcome to PopTopia!</p>
 
-            <a href="#content" class="button1">
-              <div class="box-1">
-                <div class="btn btn-one">
-                  <span>Clique Aqui e Conheça!</span>
-                </div>
+        <div class="menu-container">
+          <a href="#content" class="button1">
+            <div class="box-1">
+              <div class="btn btn-one">
+                <span>Clique Aqui e Conheça!</span>
               </div>
-            </a>
+            </div>
+          </a>
+
+          <div class="menu-overlay hidden">
+            <div class="menu-content">
+              <h3>Choose a category</h3>
+              <ul>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      
-      <script src="script.js"></script>
+      </div>
     </main>
 
     <footer>
-      <div class="footer-container">
-        <div class="social-icons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-google"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-github"></i>
-        </div>
         <p>&copy; 2024 Copyright: Carlos Eduardo - ETEC Carapicuiba</p>
-      </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

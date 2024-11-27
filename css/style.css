@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-a, p, h1, h2 {
+a, p, h1, h2, h3 {
   color: #FFFF;
 }
 
@@ -61,14 +61,13 @@ footer {
 .footer-container {
   text-align: center;
   margin: 0 auto;
-  height: 5vh;
   max-width: 800px;
 }
 
 .social-icons {
   font-size: 20px;
-  margin-bottom: 10px;
-  gap: 15px;
+  margin-top: 5px;
+  gap: 10px;
   color: #525151;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -82,4 +81,12 @@ footer p {
   font-size: 14px;
   color: #525151;
   margin: 0;
+}
+
+.inactive {
+  color: #1A191C;
+  cursor: not-allowed;
+  pointer-events: none;
+  border-radius: 5px;
+  background-color: rgba(16, 16, 17, 0.5);
 }
