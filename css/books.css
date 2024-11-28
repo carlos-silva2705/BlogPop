@@ -1,20 +1,38 @@
+
 .all-content {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  margin: 20px auto 0;
-  background: #1F1F21;
-  width: 80%;
+  overflow: visible;
+  background-color:  #1F1F21;
+  margin: 0 auto ;
+  width: 100%;
   border-radius: 5px;
   height: 100%;
   z-index: 1;
 }
 
+.all-content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1502px;
+  z-index: -999;
+  opacity: 0.25;
+  background-image: url(/imgs/booktexture.png);
+  filter: brightness(0%);
+  background-size: auto;
+}
+
 .all-content h1{
   font-family: 'Libre Baskerville';
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-top: 5px;
   letter-spacing: 1px;
 }
@@ -22,7 +40,7 @@
 .title-container {
   position: relative;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px auto;
 }
 
 .line-circle {
@@ -70,31 +88,32 @@
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0 35px;
+  margin: 10px 0 20px;
 }
 
 .bigbox, .min-boxes {
   background-color: #fff;
   border-radius: 5px;
+  box-shadow: 0 0 25px rgb(11, 8, 14);
 }
 
 .bigbox {
   margin: 0 auto;
-  width: 625px;
+  width: 955px;
   position: relative;
-  height: 300px;
+  height: 460px;
   transition: all 0.15s ease-in-out;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .bigbox:hover {
-  width: 645px;
-  height: 320px;
+  width: 975px;
+  height: 470px;
 }
 
 .boxes img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: block;
   border-radius: 5px;
 }
@@ -104,7 +123,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 75px;
   z-index: 1;
   text-align: center;
   align-items: center;
@@ -116,7 +135,7 @@
 }
 
 .faixa h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   transition: 0.2s ease;
   font-family: 'Cormorant Garamond';
@@ -126,27 +145,27 @@
 .boxes-min {
   display: flex;
   margin: 0 auto;
-  gap: 10px;
+  gap: 30px;
 }
 
 .min-boxes {
   position: relative;
-  width: 200px;
-  height: 110px;
+  width: 300px;
+  height: 185px;
   transition: all 0.15s ease-in-out;
 }
 
 .min-boxes:hover {
-  width: 210px;
-  height: 120px;
+  width: 310px;
+  height: 195px;
 }
 
 .min-boxes > a > .faixa {
-  height: 25px;
+  height: 40px;
 }
 
 .min-boxes > a > .faixa h2 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .bigbox:hover h2, .min-boxes:hover h2 {
@@ -155,20 +174,20 @@
 
 .full-catalog {
   display: flex;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   max-width: 800px;
-
 }
 
 .catalog, .search {
   display: flex;
   flex-wrap: wrap;
-  background-color: #1A191C;
+  background-color: rgb(26, 25, 28);
   border-radius: 5px;
-  width: 350px;
+  width: 465px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 500px;
+  box-shadow: 0 0 25px rgb(11, 8, 14);
+  max-height: 570px;
 }
 
 .catalog {
@@ -179,7 +198,8 @@
 
 .boxes-catalog {
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  margin-top: 15px;
 }
 
 .items {
@@ -187,18 +207,18 @@
   flex-wrap: wrap;
   justify-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   margin-top: 20px;
 }
 
 .item:hover img {
-  width: 170px;
-  height: 240px;
+  width: 190px;
+  height: 260px;
 }
 
 .item img {
-  width: 150px;
-  height: 220px;
+  width: 180px;
+  height: 250px;
   border-radius: 5px;
   transition: all 0.15s ease-in-out;
 }
