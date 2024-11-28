@@ -7,6 +7,15 @@
   padding: 0px;
 }
 
+body::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 97, 187, 0.226);
+  border-radius: 5px;
+}
+
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #2C2C2E;
@@ -19,12 +28,18 @@ a, p, h1, h2, h3 {
 
 .header {
   display: flex;
-  align-items: normal;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #1A191C;
+  width: 100%;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  background-color: #1a191c;
   padding: 10px 10px;
+  box-shadow: 0 -6px 40px 5px rgb(11, 8, 14);
+  height: 65px;
 }
+
 
 .header a {
   margin-left: 10px;
@@ -33,9 +48,9 @@ a, p, h1, h2, h3 {
   float: left;
   color: rgba(251, 251, 248, 0.8);
   text-align: center;
-  padding: 5px 15px 5px 15px;
+  padding: 10px 15px 10px 15px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
   transition: 0.2s ease;
@@ -71,7 +86,7 @@ footer {
 }
 
 .social-icons {
-  font-size: 20px;
+  font-size: 25px;
   margin: 5px auto 20px;
   cursor: pointer;
   max-width: 160px;
