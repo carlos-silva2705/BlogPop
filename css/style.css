@@ -72,11 +72,14 @@ footer {
 
 .social-icons {
   font-size: 20px;
-  margin-top: 5px;
-  color: #525151;
+  margin: 5px auto 20px;
   cursor: pointer;
-  margin-bottom: 20px;
+  max-width: 160px;
   transition: color 0.3s ease;
+}
+
+.social-icons a {
+  color: #525151;
 }
 
 .social-icons i {
