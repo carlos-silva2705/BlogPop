@@ -1,5 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=League+Gothic:wdth@75..100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 .header-buttons.hidden {
   display: none;
@@ -203,11 +201,15 @@ div[class*=box] {
   text-decoration: none;
   font-family: 'Open Sans Condensed', sans-serif;
   letter-spacing: 1px;
-  color: rgb(231, 216, 216);
+  color: rgba(251, 251, 248, 0.8);
   font-size: 20px;
   transition: color 0.2s;
 }
 
 .menu-content li a:hover {
   color: #116cce;
+}
+
+.social-icons {
+  margin-bottom: 5px;
 }

@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=League+Gothic:wdth@75..100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=League+Gothic:wdth@75..100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,7 +14,7 @@ body {
 }
 
 a, p, h1, h2, h3 {
-  color: #FFFF;
+  color: rgba(251, 251, 248, 0.8);
 }
 
 .header {
@@ -27,13 +31,14 @@ a, p, h1, h2, h3 {
   margin-right: 10px;
   display: flex;
   float: left;
-  color: #EFD4D4;
+  color: rgba(251, 251, 248, 0.8);
   text-align: center;
   padding: 5px 15px 5px 15px;
   text-decoration: none;
   font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
+  transition: 0.2s ease;
 }
 
 .header a.logo {
@@ -42,20 +47,21 @@ a, p, h1, h2, h3 {
 }
 
 .header-buttons a:hover {
-  color: #756E6E;
+  color: #0060BB;
 }
 
 .header-buttons {
   display: flex;
   margin-left: 50px;
-  justify-self: center;
+  margin: 0 auto;
   float: right;
 }
 
 footer {
   background-color: #1A191C;
   padding: 20px 0;
-  border-top: 2px solid #e0e0e0;
+  z-index: -999;
+  border-top: 2px solid rgba(251, 251, 248, 0.8);
 }
 
 .footer-container {
@@ -67,14 +73,18 @@ footer {
 .social-icons {
   font-size: 20px;
   margin-top: 5px;
-  gap: 10px;
   color: #525151;
   cursor: pointer;
+  margin-bottom: 20px;
   transition: color 0.3s ease;
 }
 
+.social-icons i {
+  margin: 0 5px;
+}
+
 .social-icons i:hover {
-  color: #007bff;
+  color: #0060BB;
 }
 
 footer p {
@@ -84,9 +94,8 @@ footer p {
 }
 
 .inactive {
-  color: #1A191C;
   cursor: not-allowed;
   pointer-events: none;
   border-radius: 5px;
-  background-color: rgba(16, 16, 17, 0.5);
+  background: rgba(44, 44, 46, 0.76);
 }

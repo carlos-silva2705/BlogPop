@@ -1,0 +1,203 @@
+.all-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 20px auto 0;
+  background: #1F1F21;
+  width: 80%;
+  border-radius: 5px;
+  height: 100%;
+  z-index: 1;
+}
+
+.all-content h1{
+  font-family: 'Libre Baskerville';
+  font-size: 1.5rem;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.title-container {
+  position: relative;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.line-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.line-circle::before,
+.line-circle::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: rgba(251, 251, 248, 0.8);
+  border-radius: 50%;
+}
+
+.line-circle::before {
+  position: absolute;
+  left: -5px;
+}
+
+.line-circle::after {
+  position: absolute;
+  right: -5px;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+}
+
+.related {
+  max-width: 800px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 35px;
+}
+
+.bigbox, .min-boxes {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.bigbox {
+  margin: 0 auto;
+  width: 625px;
+  position: relative;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.boxes img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.faixa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.faixa h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  transition: 0.2s ease;
+}
+
+.bigbox.faixa h2 {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+}
+
+.boxes-min {
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.min-boxes {
+  position: relative;
+  width: 200px;
+  height: 110px;
+}
+
+.min-boxes > a > .faixa {
+  height: 25px;
+}
+
+.min-boxes > a > .faixa h2 {
+  font-size: 16px;
+}
+
+.bigbox:hover h2, .min-boxes:hover h2 {
+  color: #0060BB;
+}
+
+.full-catalog {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 800px;
+
+}
+
+.catalog, .search {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1A191C;
+  border-radius: 5px;
+  justify-items: center;
+  justify-content: center;
+  width: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 0 1 calc(50% - 10px);
+  max-height: 500px;
+}
+
+.boxes-catalog {
+  display: flex;
+  gap: 25px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.item img {
+  width: 150px;
+  height: 220px;
+  border-radius: 5px;
+}
+
+.catalog::-webkit-scrollbar, 
+.search::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
+  width: 5px;
+}
+
+.catalog::-webkit-scrollbar-thumb, 
+.search::-webkit-scrollbar-track {
+  background: rgba(0, 97, 187, 0.226);
+  border-radius: 5px;
+}
+
+.catalog::-webkit-scrollbar-thumb:hover, 
+.search::-webkit-scrollbar-track:hover {
+  background: rgba(0, 97, 187, 0.068);
+}
