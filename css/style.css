@@ -29,15 +29,14 @@ a, p, h1, h2, h3 {
 .header {
   display: flex;
   width: 100%;
-  position: -webkit-sticky; /* For Safari */
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 10;
   align-items: center;
   background-color: #1a191c;
   padding: 10px 10px;
   box-shadow: 0 -6px 40px 5px rgb(11, 8, 14);
-  height: 65px;
+  height: 55px;
 }
 
 
@@ -75,8 +74,6 @@ a, p, h1, h2, h3 {
 footer {
   background-color: #1A191C;
   padding: 20px 0;
-  z-index: -999;
-  border-top: 2px solid rgba(251, 251, 248, 0.8);
 }
 
 .footer-container {
@@ -99,6 +96,7 @@ footer {
 
 .social-icons i {
   margin: 0 5px;
+  transition: .15s ease;
 }
 
 .social-icons i:hover {
@@ -116,4 +114,12 @@ footer p {
   pointer-events: none;
   border-radius: 5px;
   background: rgba(44, 44, 46, 0.76);
+}
+
+@media screen and (max-width: 1380px) {
+  .header {
+    height: 40px;
+    font-size: 14px;
+  }
+  
 }

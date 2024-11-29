@@ -195,6 +195,7 @@ div[class*=box] {
   margin: 5px;
   border: 1px solid #FFF;
   border-radius: 5px;
+  box-shadow: 0 0 12px #ffffff38;
 }
 
 .menu-content li {
