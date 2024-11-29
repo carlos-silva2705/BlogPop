@@ -1,12 +1,13 @@
+body {
+  overflow-x: hidden;
+}
 
 .all-content {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: center;
   justify-items: center;
   align-items: center;
-  overflow: visible;
   background-color:  #1F1F21;
   margin: 0 auto ;
   width: 100%;
@@ -99,16 +100,16 @@
 
 .bigbox {
   margin: 0 auto;
-  width: 955px;
+  width: 58vw;
+  height: 48vh;
   position: relative;
-  height: 460px;
   transition: all 0.15s ease-in-out;
   margin-bottom: 30px;
 }
 
 .bigbox:hover {
-  width: 975px;
-  height: 470px;
+  width: 59vw;
+  height: 49vh;
 }
 
 .boxes img {
@@ -285,30 +286,4 @@
   fill: #9e9ea7;
   width: 1rem;
   height: 1rem;
-}
-
-@media screen and (min-width: 905px) and (max-width: 1380px) {
-  .min-boxes {
-    width: 250px;
-    height: 160px;
-  }
-
-  .min-boxes:hover {
-    width: 260px;
-    height: 10px;
-  }
-
-  .bigbox {
-    width: 810px;
-    height: 350px;
-  }
-
-  .bigbox:hover {
-    width: 820px;
-    height: 560px;
-  }
-
-  .catalog, .search {
-    width: 387.5px;
-  }
 }
