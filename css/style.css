@@ -33,27 +33,35 @@ a, p, h1, h2, h3 {
 .header {
   display: flex;
   width: 100%;
-  z-index: 10;
   position: sticky;
-  top: -10px;
-  justify-self: center;
+  top: 0px;
+  z-index: 10;
   align-items: center;
   background-color: #1a191c;
+  padding: 10px 10px;
   box-shadow: 0 -6px 40px 5px rgb(11, 8, 14);
-  padding: 10px 0;
+  height: 55px;
 }
 
 
 .header a {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
+  float: left;
   color: rgba(251, 251, 248, 0.8);
   text-align: center;
   padding: 10px 15px 10px 15px;
   text-decoration: none;
   font-size: 20px;
   line-height: 25px;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: 0.2s ease;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .header-buttons a:hover {
@@ -62,8 +70,9 @@ a, p, h1, h2, h3 {
 
 .header-buttons {
   display: flex;
-  gap: 10px;
+  margin-left: 50px;
   margin: 0 auto;
+  float: right;
 }
 
 footer {
