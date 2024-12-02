@@ -7,13 +7,17 @@
   padding: 0px;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0.1);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 97, 187, 0.068);
+}
+
+::-webkit-scrollbar-thumb {
   background: rgba(0, 97, 187, 0.226);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 body {
@@ -103,7 +107,7 @@ footer p {
 .inactive {
   cursor: not-allowed;
   pointer-events: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background: rgba(44, 44, 46, 0.76);
 }
 

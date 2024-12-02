@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="header">
-      <div class="header-buttons hidden">
+      <div class="header-buttons">
         <a class="active" href="index.html">Home</a>
         <a href="books.html" class="books-link" id="books-link">Books</a>
         <a href="#movies">Movies</a>
@@ -74,53 +74,71 @@
 
         <div class="boxes-catalog">
           <div class="catalog">
-            <div class="items">
-              <div class="item item1">
+            <div class="items" id="myUL">
+
+                <div class="item item1" data-title="osbert">
+                  <a href="#" title="Osbert, The Avenger">
+                    <img src="imgs/osbert.jpg" alt="">
+                    <p>Osbert, O Vingador</p>
+                  </a>
+                </div>
+
+                <div class="item item2" data-title="divine comedy">
+                  <a href="#" title="Divine Comedy">
+                    <img src="imgs/adivinacomedia.jpg" alt="">
+                    <p>Divine Comedy</p>
+                  </a>
+                </div>
+
+                <div class="item item3" data-title="doctor dream">
+                  <a href="#" title="Doctor Dream">
+                    <img src="imgs/drsono.jpg" alt="">
+                    <p>Dr. Dream</p>
+                  </a>
+                </div>
+
+                <div class="item item4" data-title="the Shining">
+                  <a href="#" title="The Shining">
+                    <img src="imgs/oiluminado.jpg" alt="">
+                    <p>The Shining</p>
+                  </a>
+                </div>
+
+                <div class="item item5" data-title="All the Bright Places">
+                  <a href="#" title="All the Bright Places">
+                    <img src="imgs/capeatbp.jpg" alt=""></a>
+                    <p>All The Bright Places</p>
+                </div>
+
+                <div class="item item6" data-title="The Fault In Our Stars">
+                  <a href="#" title="The Fault In Our Stars">
+                    <img src="imgs/tfioscape.jpg" alt="">
+                    <p>The Fault In Our Stars</p>
+                  </a>
+                </div>
+
+              <div class="item item7">
                 <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
 
-              <div class="item item2">
-                <a href="#"><img src="imgs/adivinacomedia.jpg" alt=""></a>
-              </div>
-
-              <div class="item item3">
-                <a href="#"><img src="imgs/drsono.jpg" alt=""></a>
-              </div>
-
-              <div class="item item4">
-                <a href="#"><img src="imgs/oiluminado.jpg" alt=""></a>
-              </div>
-
-              <div class="item item5">
-                <a href="#"><img src="imgs/capeatbp.jpg" alt=""></a>
-              </div>
-
-              <div class="item item6">
-                <a href="#"><img src="imgs/tfioscape.jpg" alt=""></a>
-              </div>
-
-              <div class="item item7">
-                <a href="#"><img src="imgs/choraum.jpg" alt=""></a>
-              </div>
-
               <div class="item item8">
-                <a href="#"><img src="imgs/verity.jpg" alt=""></a>
+                <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
 
               <div class="item item9">
-                <a href="#"><img src="imgs/oouil.jpg" alt=""></a>
+                <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
 
               <div class="item item10">
-                <a href="#"><img src="imgs/iwashere.jpg" alt=""></a>
+                <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
 
               <div class="item item11">
-                <a href="#"><img src="imgs/battleroyale.jpg" alt=""></a>
+                <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
 
               <div class="item item12">
-                <a href="#"><img src="imgs/thisheartofmine.jpg" alt=""></a>
+                <a href="#"><img src="imgs/osbert.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -135,7 +153,7 @@
                 </g>
               </svg>
               
-              <input type="search" placeholder="Search" class="input">
+              <input type="search" placeholder="Search" class="input" id="myInput">
             </div>
           </div>
         </div>
@@ -153,6 +171,8 @@
     </div>
   </footer>
 
-  <script src="js/books.js"></script>
+  <script src="js/books.js">
+    
+  </script>
 </body>
 </html>
